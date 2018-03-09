@@ -1,3 +1,6 @@
+/**
+  * @ref https://medium.com/learning-new-stuff/building-your-second-react-js-app-d53b0c98dc
+*/
 import React, { Component } from 'react';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
@@ -77,14 +80,10 @@ class FilmsApp extends Component {
             }.bind(this)
         });
     }       
-    componentDidMount(){
-        console.log('didMountd hite');
-        this.search('https://itunes.apple.com/search?term=fun');
-    }
     render() {
           return(
               <div className="flimsApp">
-                <h4 className="maintitle">Accessing API with Ajax in React</h4>
+                <h4 className="maintitle">Accessing API with Ajax in React Leaning</h4>
                 <b>How To Run</b>
                 <ul className="howtorun">                    
                     <li>Type the Film OR App Name in search box(eg.Who we are , whatsapps etc)</li>

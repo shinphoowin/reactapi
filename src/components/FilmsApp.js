@@ -40,8 +40,9 @@ class SearchBox extends Component{
     render() {           
         return (
             <div>
-                <input type="text" ref="query" />
+                <input type="text" ref="query" placeholder="Movie name or Apps name"/>
                 <select ref="category">
+                    <option>Choose Flims or Apps</option>
                     <option value="software">Apps</option>
                     <option value="movie">Films</option>
                 </select>
@@ -64,6 +65,17 @@ class FilmsApp extends Component {
     //         searchResults: []
     //     }
     // }
+
+    componentDidMount(){
+        $("select").css('color','#888');
+        $("select option").css({'background': '#888','color':'#fff'})
+        $("select").on("change",function(){
+            $(this).css({
+                color: '#333'
+            })
+        })
+    }
+
     showResults(response){
         this.setState({
             searchResults: response.results            

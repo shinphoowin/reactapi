@@ -95,11 +95,11 @@ class FilmsApp extends Component {
     render() {
           return(
               <div className="flimsApp">
-                <h4 className="maintitle">Accessing API with Ajax in React Leaning</h4>
+                <h4 className="maintitle">Accessing API with Ajax in React Learning</h4>
                 <b>How To Run</b>
                 <ul className="howtorun">                    
-                    <li>Type the Film OR App Name in search box(eg.Who we are , whatsapps etc)</li>
-                    <li>Choose Corresponding Category At dropdown</li>
+                    <li>Type the Film name(e.g Who we are) OR App Name (e.g whatsapps) in search box.</li>
+                    <li>Choose Corresponding Category at select dropdown related to your search</li>
                     <li>Then click Submit.</li>
                 </ul><br/><br/>
                   <SearchBox search={this.search.bind(this)} />

@@ -32,9 +32,6 @@ body {
     line-height: 1.5em;
     font-family: "Droid Sans";
 }
-ul {
-    list-style: none;
-}
 blockquote, q {
     quotes: none;
 }
@@ -50,7 +47,6 @@ table {
 /*//end css reset*/
 
 .howtorun{
-  list-style: number;
   padding-left: 20px;
 }
 .maintitle{
